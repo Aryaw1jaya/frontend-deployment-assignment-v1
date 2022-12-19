@@ -30,7 +30,7 @@ const Photos = () => {
     } else {
       fetch("https://gallery-app-server.vercel.app/photos");
     }
-  }, [sort, submited]);
+  }, [search, sort, submited]);
 
   useEffect(() => {
     setLoading(true);
